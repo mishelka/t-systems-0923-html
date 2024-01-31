@@ -1,0 +1,80 @@
+td, th {
+    padding: 16px;
+    /*border: 1px solid lightgray;*/
+    border-color: lightgray;
+    border-style: solid;
+    /*border-width: 1px 0;*/
+    /*border-width: 1px 0 1px 0;*/
+    border-width: 0 0 1px 0;
+}
+
+table {
+    border-spacing: 0;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    border: 1px solid mediumaquamarine;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    padding: 8px 16px;
+    box-shadow: rgba(77, 77, 77, 0.2) 0 2px 8px 0;
+}
+
+button:hover, button:active, button:focus {
+    background-color: aliceblue;
+    border-color: aquamarine;
+    cursor: pointer;
+    box-shadow: rgba(77, 77, 77, 0.2) 0 4px 16px 0;
+}
+
+/*class - stredna priorita*/
+/*.person-table tr:nth-child(even) {*/
+/*    background-color: red;*/
+/*}*/
+
+/*id - najvyssia priorita*/
+/*#person-table-id tr:nth-child(even) {*/
+/*    background-color: lawngreen;*/
+/*}*/
+
+/*class s nizsou specifickostou - prepise ho class vyssie*/
+/*.person-table tr:nth-child(even) {*/
+/*    background-color: red;*/
+/*}*/
+
+/*element - najnizsia priorita*/
+table tr:nth-child(even) {
+    background-color: lightgoldenrodyellow;
+}
+
+.person-table tr:hover {
+    background-color: aliceblue;
+}
+
+.person-table {
+    border: 1px solid lightgray;
+}
+
+table {
+    width: 100vw;
+}
+
+.form {
+    padding: 24px 0;
+}
+
+input, select {
+    padding: 8px 4px;
+    border-radius: 4px;
+    border: 1px solid #272727; /*rgba(27, 27, 27, 0.5);*/
+}
+
+label {
+    font-size: small;
+    font-weight: bold;
+}
+
+.form-field {
+    margin-bottom: 16px;
+}
