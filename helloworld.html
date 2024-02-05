@@ -6,6 +6,14 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+	<div class="main-menu">
+		<div class="menu-container">
+			<div class="left-items">Menu</div>
+			<div class="hamburger">Hamburger</div>
+		</div>
+	</div>
+
 	Hello World!
 
 	Uloha: napisat tento subor, otvorit v prehliadaci.
@@ -42,99 +50,87 @@
 
 <!--	embedded css: <style>...</style>-->
 
-	<table class="person-table" id="person-table-id">
-		<thead>
-			<tr>
-				<th>Name</th>
-				<th>Surname</th>
-				<th>Age</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><a href="person.html">Emil</a></td>
-				<td><a href="person.html">Smith</a></td>
-				<td><a href="person.html">20</a></td>
-			</tr>
-			<tr>
-				<td>John</td>
-				<td>Tobias</td>
-				<td>30</td>
-			</tr>
-			<tr>
-				<td>Mishele</td>
-				<td>Smith</td>
-				<td>20</td>
-			</tr>
-			<tr>
-				<td>Michael</td>
-				<td>Tobias</td>
-				<td>30</td>
-			</tr>
-			<tr>
-				<td>Ygritte</td>
-				<td>Smith</td>
-				<td>20</td>
-			</tr>
-			<tr>
-				<td>Peter</td>
-				<td>Tobias</td>
-				<td>30</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="grid-container" id="person-table-id">
+			<div class="header">Name</div>
+			<div class="header">Surname</div>
+			<div class="header">Age</div>
+			<div><a href="person.html"><span class="table-label">Name:</span> Emil</a></div>
+			<div><a href="person.html">Smith</a></div>
+			<div><a href="person.html">20</a></div>
+			<div>John</div>
+			<div>Tobias</div>
+			<div>30</div>
+			<div>Mishele</div>
+			<div>Smith</div>
+			<div>20</div>
+			<div>Michael</div>
+			<div>Tobias</div>
+			<div>30</div>
+			<div>Ygritte</div>
+			<div>Smith</div>
+			<div>20</div>
+			<div>Peter</div>
+			<div>Tobias</div>
+			<div>30</div>
+		</div>
+	</div>
 
   <form name="personForm" class="form">
 		<h1>Add a new Person</h1>
 
-		<div class="form-field">
-			<label>Name:</label>
-			<input type="text" name="name" title="name" placeholder="Enter your name"
-						 maxlength="30" required>
+		<div class="form-container">
+			<div class="form-field">
+				<label>Name:</label>
+				<input type="text" name="name" title="name" placeholder="Enter your name"
+							 maxlength="30" required>
+			</div>
+
+			<div class="form-field">
+				<label>Surname:</label>
+				<input type="text" name="surname" title="surname" placeholder="Enter your surname"
+							 maxlength="150" required>
+			</div>
+
+			<div class="form-field">
+				<label>Age:</label>
+				<input type="number" name="age" title="age" placeholder="Enter your age"
+							 min="0" max="100">
+			</div>
+
+			<div class="check-fields-container">
+				<div class="form-field" style="flex-grow: 1;">
+					<label>Favourite color:</label>
+					<span><input type="checkbox" name="favc" value="red">red</span>
+					<span><input type="checkbox" name="favc" value="blue">blue</span>
+					<span><input type="checkbox" name="favc" value="green">green</span>
+				</div>
+				<div class="form-field" style="flex-grow: 1;">
+					<label>Gender:</label>
+					<span><input type="radio" name="gender" value="male">male</span>
+					<span><input type="radio" name="gender" value="female">female</span>
+					<span><input type="radio" name="gender" value="other">other</span>
+				</div>
+			</div>
+
+			<div class="form-field">
+				<label>Favourite car:</label>
+				<select name="favcar" placeholder="Favourite car">
+					<option>Toyota</option>
+					<option>Renault</option>
+					<option>Honda</option>
+					<option>BMW</option>
+				</select>
+			</div>
+
+<!--			<input type="color">-->
+<!--			<input type="date">-->
+
+			<div class="button-group">
+				<input type="submit" title="OK">
+				<button type="submit">OK</button>
+				<button type="reset">Reset</button>
+			</div>
 		</div>
-
-		<div class="form-field">
-			<label>Surname:</label>
-			<input type="text" name="surname" title="surname" placeholder="Enter your surname"
-						 maxlength="150" required>
-		</div>
-
-		<div class="form-field">
-			<label>Age:</label>
-			<input type="number" name="age" title="age" placeholder="Enter your age"
-						 min="0" max="100">
-		</div>
-
-		<div class="form-field">
-			<label>Favourite color:</label>
-			<input type="checkbox" name="favc" value="red">red
-			<input type="checkbox" name="favc" value="blue">blue
-			<input type="checkbox" name="favc" value="green">green
-		</div>
-
-		<div class="form-field">
-			<label>Gender:</label>
-			<input type="radio" name="gender" value="male">male
-			<input type="radio" name="gender" value="female">female
-			<input type="radio" name="gender" value="other">other
-		</div>
-
-		<div class="form-field">
-			<label>Favourite car:</label>
-			<select name="favcar" placeholder="Favourite car">
-				<option>Toyota</option>
-				<option>Renault</option>
-				<option>Honda</option>
-				<option>BMW</option>
-			</select>
-		</div>
-
-		<input type="color">
-		<input type="date">
-
-		<input type="submit" title="OK">
-		<button type="submit">OK</button>
-		<button type="reset">Reset</button>
 	</form>
 
 </body>
